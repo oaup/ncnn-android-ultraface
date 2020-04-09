@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.oaup.ultraface"
+        minSdkVersion 24
+
+        ndk {
+            moduleName "facencnn"
+            stl "stlport_static"
+            ldLibs "log", "z", "m"
+            abiFilters "armeabi-v7a"
+        }
+    }
+
+    sourceSets.main.jni.srcDirs = []
+
+    externalNativeBuild {
+        ndkBuild {
+            path file('src/main/jni/Android.mk')
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            jniDebuggable true
+            renderscriptDebuggable true
+            debuggable true
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+}

@@ -1,0 +1,3 @@
+set solib-search-path E:/myworkspace/Android/ImgProcess/app/src/main//obj/local/x86
+source E:/Android/android-ndk-r10d/prebuilt/common/gdb/common.setup
+directory E:/Android/android-ndk-r10d/platforms/android-9/arch-x86/usr/include E:/\Android\\library\\OpenCV-android-sdk/sdk/native/jni/include/opencv E:/\Android\\library\\OpenCV-android-sdk/sdk/native/jni/include E:/Android/android-ndk-r10d/sources/cxx-stl/stlport/stlport E:/Android/android-ndk-r10d/sources/cxx-stl//gabi++/include E:/myworkspace/Android/ImgProcess/app/src/main//jni

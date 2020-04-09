@@ -1,0 +1,37 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\workspace\android\ncnn-android-ultraface\app\src\main\AndroidManifest.xml:2:1-14:12
+INJECTED from E:\workspace\android\ncnn-android-ultraface\app\src\main\AndroidManifest.xml:2:1-14:12
+INJECTED from E:\workspace\android\ncnn-android-ultraface\app\src\main\AndroidManifest.xml:2:1-14:12
+	package
+		ADDED from E:\workspace\android\ncnn-android-ultraface\app\src\main\AndroidManifest.xml:3:5-33
+		INJECTED from E:\workspace\android\ncnn-android-ultraface\app\src\main\AndroidManifest.xml
+		INJECTED from E:\workspace\android\ncnn-android-ultraface\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\workspace\android\ncnn-android-ultraface\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from E:\workspace\android\ncnn-android-ultraface\app\src\main\AndroidManifest.xml:5:5-12:19
+	android:label
+		ADDED from E:\workspace\android\ncnn-android-ultraface\app\src\main\AndroidManifest.xml:5:18-50
+activity#com.oaup.ultraface.MainActivity
+ADDED from E:\workspace\android\ncnn-android-ultraface\app\src\main\AndroidManifest.xml:6:9-11:20
+	android:name
+		ADDED from E:\workspace\android\ncnn-android-ultraface\app\src\main\AndroidManifest.xml:6:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from E:\workspace\android\ncnn-android-ultraface\app\src\main\AndroidManifest.xml:7:13-10:29
+action#android.intent.action.MAIN
+ADDED from E:\workspace\android\ncnn-android-ultraface\app\src\main\AndroidManifest.xml:8:17-69
+	android:name
+		ADDED from E:\workspace\android\ncnn-android-ultraface\app\src\main\AndroidManifest.xml:8:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\workspace\android\ncnn-android-ultraface\app\src\main\AndroidManifest.xml:9:17-77
+	android:name
+		ADDED from E:\workspace\android\ncnn-android-ultraface\app\src\main\AndroidManifest.xml:9:27-74
+uses-sdk
+INJECTED from E:\workspace\android\ncnn-android-ultraface\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\workspace\android\ncnn-android-ultraface\app\src\main\AndroidManifest.xml
+INJECTED from E:\workspace\android\ncnn-android-ultraface\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\workspace\android\ncnn-android-ultraface\app\src\main\AndroidManifest.xml
+		ADDED from E:\workspace\android\ncnn-android-ultraface\app\src\main\AndroidManifest.xml
+		INJECTED from E:\workspace\android\ncnn-android-ultraface\app\src\main\AndroidManifest.xml
