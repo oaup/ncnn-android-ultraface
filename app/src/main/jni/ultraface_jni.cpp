@@ -260,8 +260,9 @@ JNIEXPORT jobject JNICALL Java_com_oaup_ultraface_UltraFaceNcnn_Detect(JNIEnv* e
     AndroidBitmap_getInfo(env, bitmap, &info);
     int width = info.width;
     int height = info.height;
-    if (width != 227 || height != 227)
-        return NULL;
+    //if (width != 227 || height != 227)
+    //return NULL;
+
     if (info.format != ANDROID_BITMAP_FORMAT_RGBA_8888)
         return NULL;
     // opencv mat

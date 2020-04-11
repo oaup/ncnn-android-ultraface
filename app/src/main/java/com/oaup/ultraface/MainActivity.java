@@ -51,15 +51,16 @@ public class MainActivity extends Activity {
             public void onClick(View arg0) {
                 if (yourSelectedImage == null)
                     return;
-
+                long start = System.currentTimeMillis();
                 Bitmap bitmap = faceNcnn.Detect(yourSelectedImage, false);
-
+                long end = System.currentTimeMillis();
                 if (bitmap == null)
                 {
                     infoResult.setText("detect failed");
                 }
                 else
                 {
+                    infoResult.setText("cpu detect " + (end-start) + " ms \n" + "threads 4");
                     imageView.setImageBitmap(bitmap);
                 }
             }
@@ -71,15 +72,16 @@ public class MainActivity extends Activity {
             public void onClick(View arg0) {
                 if (yourSelectedImage == null)
                     return;
-
+                long start = System.currentTimeMillis();
                 Bitmap bitmap = faceNcnn.Detect(yourSelectedImage, true);
-
+                long end = System.currentTimeMillis();
                 if (bitmap == null)
                 {
                     infoResult.setText("detect failed");
                 }
                 else
                 {
+                    infoResult.setText("gpu detect " + (end-start) + " ms \n" +"threads 4");
                     imageView.setImageBitmap(bitmap);
                 }
             }
@@ -101,9 +103,13 @@ public class MainActivity extends Activity {
                     Bitmap rgba = bitmap.copy(Bitmap.Config.ARGB_8888, true);
 
                     // resize to 227x227
-                    yourSelectedImage = Bitmap.createScaledBitmap(rgba, 227, 227, false);
+                    //yourSelectedImage = Bitmap.createScaledBitmap(rgba, 227, 227, false);
+
+                    yourSelectedImage = Bitmap.createScaledBitmap(rgba, rgba.getWidth(), rgba.getHeight(), false);
 
                     rgba.recycle();
+
+                    yourSelectedImage = bitmap;
 
                     imageView.setImageBitmap(bitmap);
                 }
