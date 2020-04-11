@@ -32,3 +32,9 @@ open this project with Android Studio, build it and enjoy!
  
  ## Reference
   - [1MB轻量级人脸检测模型 python](https://github.com/Linzaer/Ultra-Light-Fast-Generic-Face-Detector-1MB) 
+  
+  
+ ### Example project
+ 
+ ![](https://github.com/oaup/ncnn-android-ultraface/blob/master/Screenshot_20200411_094803_com.oaup.ultraface.jpg)
+ ![](https://github.com/oaup/ncnn-android-ultraface/blob/master/Screenshot_20200411_095051_com.oaup.ultraface.jpg)
